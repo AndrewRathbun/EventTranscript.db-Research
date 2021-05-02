@@ -32,7 +32,8 @@ There is a table within EventTranscript.db that provides the following informati
 SQLECmd has a Map that'll parse EventTranscript.db into 6 separate CSVs, one for each Tag Description.
 
 ### Parsing Considerations
-JSON Payload in each event entry
+
+There is a JSON Payload in each event entry that appears to differ between each Full Event Name. 
 
 ## I don't see EventTranscript.db on my own system/a client's system, what's the deal?
 
@@ -49,3 +50,16 @@ This database appears to serve as a backend for the Diagnostic Data Viewer appli
 ## How long has EventTranscript.db existed within Windows?
 
 Preliminary research shows that EventTranscript.db was being recorded to by Windows using DiagTrack.dll starting with Windows 1709. Prior to that, Windows recorded to .rbs files that were hardcoded in filename as events00.rbs, events01.rbs, events10.rbs, and events11.rbs. These files were effectively compressed JSON through 1703 until 1709 changed to EventTranscript.db, which is a SQLite database.
+
+## Supplemental Documention
+
+EventTranscript.db isn't named by name in any of the below documentation
+
+[Diagnostics, feedback, and privacy in Windows 10](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-10-28808a2b-a31b-dd73-dcd3-4559a5199319)
+
+[Diagnostic Data Viewer Overview](https://docs.microsoft.com/en-us/windows/privacy/diagnostic-data-viewer-overview)
+
+[Feedback & Diagnostics Settings](https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winpc/feedback-diagnostics-settings/c300bfe3-8562-45f6-9341-d7373cc85d9c)
+
+# TODO
+Add section about Full Event Name and how JSON Payload is different for each one.
