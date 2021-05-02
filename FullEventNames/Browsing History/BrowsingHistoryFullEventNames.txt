@@ -1,0 +1,11 @@
+Aria.4bb4d6f7cafc4e9292f972dca2dcde42.evt_stats
+Microsoft.OSG.Web.WinInet.Http2RstStreamReceived
+Microsoft.OSG.Web.WinInet.SameSiteSetCookie
+Microsoft.OSG.Web.WinInet.TLSHandshakeSucceeded
+Microsoft.Web.Platform.AppCacheManifestResourceQuotaCheck
+Microsoft.Web.Platform.BeforeNavigate
+Microsoft.Web.Platform.Chakra.ScriptContextTelemetry
+Microsoft.Web.Platform.NavigateComplete
+Microsoft.Web.Platform.SetUri
+Microsoft.Web.Platform.UpdateTravelLog
+Microsoft.Windows.AppModel.AppUriHandlerRegistrationVerifier.VerifyFromWeb
