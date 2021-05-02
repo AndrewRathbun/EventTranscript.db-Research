@@ -63,3 +63,9 @@ EventTranscript.db isn't named by name in any of the below documentation
 
 # TODO
 Add section about Full Event Name and how JSON Payload is different for each one.
+
+Add links to SQLECmd Maps.
+
+Add section about using SQLECmd with KAPE.
+
+Add GIFs showing how to change size of DB and other settings that can be changed.
