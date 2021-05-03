@@ -29,7 +29,7 @@ There is a table within EventTranscript.db that provides the following informati
 
 ## How much data does EventTranscript.db record?
 
-The answer to everything in DFIR: "It depends". The user can specify the size of the database, as seen below:
+The answer to everything in DFIR: "It depends". The user can specify the size and scope of the database, as seen below:
 
 ![DiagnosticDataSettings](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/DiagnosticDataSettings.gif)
 
