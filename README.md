@@ -128,6 +128,8 @@ EventTranscript.db isn't named by name in any of the below documentation, but al
 
 [Forensic analysis of the Windows telemetry for diagnostics](https://arxiv.org/ftp/arxiv/papers/2002/2002.12506.pdf)
 
+[Windows 10, version 1709 and newer optional diagnostic data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data)
+
 # TODO
 Add links to SQLECmd Map.
 
