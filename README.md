@@ -118,7 +118,7 @@ These are just a few that jumped out to me as potentially having forensic value.
 
 ## Supplemental Documention
 
-EventTranscript.db isn't named by name in any of the below documentation
+EventTranscript.db isn't named by name in any of the below documentation, but all the below links provide invaluable insight into how Windows utilizes and records diagnostic data that resides in this database.
 
 [Diagnostics, feedback, and privacy in Windows 10](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-10-28808a2b-a31b-dd73-dcd3-4559a5199319)
 
