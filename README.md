@@ -39,13 +39,31 @@ SQLECmd has a Map that'll parse EventTranscript.db into 6 separate CSVs, one for
 
 ### Parsing Considerations
 
-Full Event Name is a column within the EventTranscript.db database which appears to give a high level summary of the event, similar to the description of an event provided in Windows Event Logs. For each event entry in this database, there is a JSON Payload that appears to differ between each Full Event Name. What that means is likely no "one size fits all" SQL query will work for ALL events that exist within this database.
+Full Event Name is a column within the EventTranscript.db database which appears to give a high level summary of the event, similar to the description of an event provided in Windows Event Logs. For each event entry in this database, there is a JSON Payload that appears to differ between each Full Event Name. What that means is likely no "one size fits all" SQLite query will work for ALL events that exist within this database.
 
 I've compiled a deduplicated list of Full Event Names I observed on my own system [here](https://github.com/rathbuna/EventTranscript.db-Research/tree/main/FullEventNames). Please feel free to add ones that my system didn't happen to record so a more complete list can be maintained for the benefit of the community. 
 
-### Writing Your Own SQL Queries to Parse EventTranscript.db
+### Writing Your Own SQLite Queries to Parse EventTranscript.db
 
-Since the JSON Payload appears to be different for each Full Event Name, you'll want to leverage the 
+Since the JSON Payload appears to be different for each Full Event Name, you'll want to leverage `json_extract` for parsing out data from the JSON Payload column. 
+
+It appears every event has the following names and corresponding values
+* `ver`
+* `name`
+* `time`
+* `iKey`
+* `ext`
+* `data`
+
+The `data` name is where data differentiates between each Full Event Name. If you want to parse the SessionID value from the `data` node, it would look something like this:
+
+`json_extract ( payload, '$.data.sessionID' ) AS SessionID,`
+
+To illustrate there, here are some more examples of what the SQLite query would look like for parsing a particular value that's nested within the JSON Payload column:
+
+![JSONExtractExamples](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/JSONExtractExamples.jpg)
+
+More documentation can be found [here](https://www.sqlite.org/json1.html) on extracting JSON using SQLite queries.
 
 ## I don't see EventTranscript.db on my own system/a client's system, what's the deal?
 
