@@ -81,6 +81,8 @@ This database appears to serve as a backend for the Diagnostic Data Viewer appli
 
 Preliminary research shows that EventTranscript.db was being recorded to by Windows using DiagTrack.dll starting with Windows 1709. Prior to that, Windows recorded to .rbs files that were hardcoded in filename as events00.rbs, events01.rbs, events10.rbs, and events11.rbs. These files were effectively compressed JSON through 1703 until 1709 changed to EventTranscript.db, which is a SQLite database. I personally compare this to the .evt to .evtx transition Microsoft made with Windows Vista, i.e. .rbs = .evtx, EventTranscript.db = .evtx. 
 
+For more info on the aforementioned .rbs files, check out this research paper: [Forensic analysis of the Windows telemetry for diagnostics](https://arxiv.org/ftp/arxiv/papers/2002/2002.12506.pdf).
+
 ## What does Diagnostic Data Viewer allow the end user to do?
 
 You can do filtering on events stored within this database in real-time using Diagnostic Data Viewer. Also, notice at the end of this GIF that the number of new events automatically updates.
@@ -123,6 +125,8 @@ EventTranscript.db isn't named by name in any of the below documentation
 [Diagnostic Data Viewer Overview](https://docs.microsoft.com/en-us/windows/privacy/diagnostic-data-viewer-overview)
 
 [Feedback & Diagnostics Settings](https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winpc/feedback-diagnostics-settings/c300bfe3-8562-45f6-9341-d7373cc85d9c)
+
+[Forensic analysis of the Windows telemetry for diagnostics](https://arxiv.org/ftp/arxiv/papers/2002/2002.12506.pdf)
 
 # TODO
 Add links to SQLECmd Map.
