@@ -6,7 +6,7 @@ This repository serves to provide all currently known information about EventTra
 
 ## What is EventTranscript.db?
 
-EventTranscript.db is a SQLite database that appears to record lots of diagnostic-related information about events that occur on the Windows operating system. This database is not enabled by default and, if enabled, can be enormous in size and potentially serve as a treasure trove of data. 
+EventTranscript.db is a SQLite database that appears to record lots of diagnostic-related information about events that occur on the Windows operating system in real-time. This database is not enabled by default and, if enabled, can be enormous in size and potentially serve as a treasure trove of data. 
 
 ## Where is EventTranscript.db located?
 
@@ -27,13 +27,25 @@ There is a table within EventTranscript.db that provides the following informati
 | 25 | en-US | Product and Service Usage | Data provided or captured about the end user’s interaction with the service or products by the cloud service provider.  Captured data includes the records of the end user’s preferences and settings for capabilities, the capabilities used and commands provided to the capabilities. |
 | 31 | en-US | Software Setup and Inventory | Data that describes the installation, setup and update of software. |
 
+## How much data does EventTranscript.db record?
+
+The answer to everything in DFIR: "It depends". The user can specify the size of the database, as seen below:
+
+![DiagnosticDataSettings](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/DiagnosticDataSettings.gif)
+
 ## How can I parse EventTranscript.db?
 
-SQLECmd has a Map that'll parse EventTranscript.db into 6 separate CSVs, one for each Tag Description.
+SQLECmd has a Map that'll parse EventTranscript.db into 6 separate CSVs, one for each Tag Description. From there, it's strongly suggested to filter on Full Event Name column for potentially relevant findings.
 
 ### Parsing Considerations
 
-There is a JSON Payload in each event entry that appears to differ between each Full Event Name. 
+Full Event Name is a column within the EventTranscript.db database which appears to give a high level summary of the event, similar to the description of an event provided in Windows Event Logs. For each event entry in this database, there is a JSON Payload that appears to differ between each Full Event Name. What that means is likely no "one size fits all" SQL query will work for ALL events that exist within this database.
+
+I've compiled a deduplicated list of Full Event Names I observed on my own system [here](https://github.com/rathbuna/EventTranscript.db-Research/tree/main/FullEventNames). Please feel free to add ones that my system didn't happen to record so a more complete list can be maintained for the benefit of the community. 
+
+### Writing Your Own SQL Queries to Parse EventTranscript.db
+
+Since the JSON Payload appears to be different for each Full Event Name, you'll want to leverage the 
 
 ## I don't see EventTranscript.db on my own system/a client's system, what's the deal?
 
@@ -49,7 +61,40 @@ This database appears to serve as a backend for the Diagnostic Data Viewer appli
 
 ## How long has EventTranscript.db existed within Windows?
 
-Preliminary research shows that EventTranscript.db was being recorded to by Windows using DiagTrack.dll starting with Windows 1709. Prior to that, Windows recorded to .rbs files that were hardcoded in filename as events00.rbs, events01.rbs, events10.rbs, and events11.rbs. These files were effectively compressed JSON through 1703 until 1709 changed to EventTranscript.db, which is a SQLite database.
+Preliminary research shows that EventTranscript.db was being recorded to by Windows using DiagTrack.dll starting with Windows 1709. Prior to that, Windows recorded to .rbs files that were hardcoded in filename as events00.rbs, events01.rbs, events10.rbs, and events11.rbs. These files were effectively compressed JSON through 1703 until 1709 changed to EventTranscript.db, which is a SQLite database. I personally compare this to the .evt to .evtx transition Microsoft made with Windows Vista, i.e. .rbs = .evtx, EventTranscript.db = .evtx. 
+
+## What does Diagnostic Data Viewer allow the end user to do?
+
+You can do filtering on events stored within this database in real-time using Diagnostic Data Viewer. Also, notice at the end of this GIF that the number of new events automatically updates.
+
+![DiagnosticDataOverviewFilteringandNewEventsOverview](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/DiagnosticDataOverviewFilteringandNewEventsOverview.gif)
+
+You can also view Problem Reports within Diagnostic Data Viewer relating to applications suddenly not working as expected.
+
+![DiagnosticDataViewerProblemReports](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/DiagnosticDataViewerProblemReports.jpg)
+
+In the About Your Data section, you can view a graphical overview of the data that's being stored in the EventTranscript.db database on your system. 
+
+![DiagnosticDataViewerAboutYourData](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/DiagnosticDataViewerAboutYourData.jpg)
+
+## Is there any other data that Diagnostic Data Viewer stores?
+
+Yes, Office Diagnostic Data is optional and can be turned on in the below settings:
+
+![OfficeDiagnosticData](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/OfficeDiagnosticData.jpg)
+
+## What are the next steps in regards to researching EventTranscript.db?
+
+There's a lot of opportunity to exploit this database for potentially useful forensic artifacts. Given the sheer volumne of events this database records, it may be like finding a needle in a haystack at times. I personally think it will come down to finding out which Full Event Names provide quick wins within the JSON Payload data. 
+
+For instance, minimal research has been done on the following, but there appears to be potential in the following Full Event Names:
+
+* [Microsoft.Windows.ClipboardHistory.Service.AddItemActivity](https://github.com/rathbuna/EventTranscript.db-Research/blob/f1f648fb8ae4f46bc4719395b9063704ebec238c/FullEventNames/Product%20and%20Service%20Performance/ProductandServicePerformanceFullEventNames.txt#L237)
+* [Microsoft.Windows.FileSystem*](https://github.com/rathbuna/EventTranscript.db-Research/blob/f1f648fb8ae4f46bc4719395b9063704ebec238c/FullEventNames/Product%20and%20Service%20Performance/ProductandServicePerformanceFullEventNames.txt#L375)
+* [Local Session Manager Events](https://github.com/rathbuna/EventTranscript.db-Research/blob/f1f648fb8ae4f46bc4719395b9063704ebec238c/FullEventNames/Product%20and%20Service%20Usage/ProductandServiceUsageFullEventNames.txt#L8)
+* [Microsoft.Windows.Apps.Photos.Analysis.OneDriveStorageStatistics](https://github.com/rathbuna/EventTranscript.db-Research/blob/f1f648fb8ae4f46bc4719395b9063704ebec238c/FullEventNames/Product%20and%20Service%20Usage/ProductandServiceUsageFullEventNames.txt#L71)
+
+These are just a few that jumped out to me as potentially having forensic value. For each Full Event Name, the JSON Payload will have to be examined for forensic value, documented, and shared with the community. 
 
 ## Supplemental Documention
 
@@ -62,10 +107,6 @@ EventTranscript.db isn't named by name in any of the below documentation
 [Feedback & Diagnostics Settings](https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winpc/feedback-diagnostics-settings/c300bfe3-8562-45f6-9341-d7373cc85d9c)
 
 # TODO
-Add section about Full Event Name and how JSON Payload is different for each one.
-
-Add links to SQLECmd Maps.
+Add links to SQLECmd Map.
 
 Add section about using SQLECmd with KAPE.
-
-Add GIFs showing how to change size of DB and other settings that can be changed.
