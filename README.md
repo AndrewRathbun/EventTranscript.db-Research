@@ -79,7 +79,7 @@ This database appears to serve as a backend for the Diagnostic Data Viewer appli
 
 ## How long has EventTranscript.db existed within Windows?
 
-Preliminary research shows that EventTranscript.db was being recorded to by Windows using DiagTrack.dll starting with Windows 1709. Prior to that, Windows recorded to .rbs files that were hardcoded in filename as events00.rbs, events01.rbs, events10.rbs, and events11.rbs. These files were effectively compressed JSON through 1703 until 1709 changed to EventTranscript.db, which is a SQLite database. I personally compare this to the .evt to .evtx transition Microsoft made with Windows Vista, i.e. .rbs = .evtx, EventTranscript.db = .evtx. 
+Preliminary research shows that EventTranscript.db was being recorded to by Windows [using DiagTrack.dll](https://docs.microsoft.com/en-us/windows/privacy/diagnostic-data-viewer-overview#microsoft-edge-diagnostic-data-appearing-as-a-blob-of-text) [starting with Windows 1709](Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy). Prior to that, Windows recorded to .rbs files that were hardcoded in filename as events00.rbs, events01.rbs, events10.rbs, and events11.rbs. These files were effectively compressed JSON through 1703 until 1709 changed to EventTranscript.db, which is a SQLite database. I personally compare this to the .evt to .evtx transition Microsoft made with Windows Vista, i.e. .rbs = .evtx, EventTranscript.db = .evtx. 
 
 For more info on the aforementioned .rbs files, check out this research paper: [Forensic analysis of the Windows telemetry for diagnostics](https://arxiv.org/ftp/arxiv/papers/2002/2002.12506.pdf).
 
@@ -129,6 +129,8 @@ EventTranscript.db isn't named by name in any of the below documentation, but al
 [Forensic analysis of the Windows telemetry for diagnostics](https://arxiv.org/ftp/arxiv/papers/2002/2002.12506.pdf)
 
 [Windows 10, version 1709 and newer optional diagnostic data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data)
+
+[Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy](https://docs.microsoft.com/en-us/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)
 
 # TODO
 Add links to SQLECmd Map.
