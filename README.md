@@ -105,7 +105,7 @@ Yes, Office Diagnostic Data is optional and can be turned on in the below settin
 
 ## What are the next steps in regards to researching EventTranscript.db?
 
-There's a lot of opportunity to exploit this database for potentially useful forensic artifacts. Given the sheer volumne of events this database records, it may be like finding a needle in a haystack at times. I personally think it will come down to finding out which Full Event Names provide quick wins within the JSON Payload data. 
+There's a lot of opportunity to exploit this database for potentially useful forensic artifacts. Given the sheer volume of events this database records, it may be like finding a needle in a haystack at times. I personally think it will come down to finding out which Full Event Names provide quick wins within the JSON Payload data. 
 
 For instance, minimal research has been done on the following, but there appears to be potential in the following Full Event Names:
 
