@@ -136,3 +136,6 @@ EventTranscript.db isn't named by name in any of the below documentation, but al
 Add links to SQLECmd Map.
 
 Add section about using SQLECmd with KAPE.
+
+Add spreadsheet of 2,080 Full Event Names with Counts.
+
