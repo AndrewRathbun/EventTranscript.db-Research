@@ -213,54 +213,34 @@ Once it is enabled, we can toggle the optional data collection categories.
 Optional data collection enables us to record web traffic visited by Internet Explorer and Edge. Unfortunately, collection of web traffic from FireFox and Google Chrome does not appear to be collected. 
 
 ```PowerShell
-PS C:\WINDOWS\temp> Get-DiagnosticData -DiagnosticDataCategory 1 | head -n 45
-
-
+PS C:\WINDOWS\temp> Get-DiagnosticData -DiagnosticDataCategory 1 
+...
 Name                     : Microsoft.Windows.App.Browser.HJ_BeforeNavigateExtended
-Timestamp                : 5/18/2021 4:14:19 PM
+Timestamp                : 5/18/2021 5:08:46 PM
 Payload                  : {"ver":"4.0","name":"Microsoft.Windows.App.Browser.HJ_BeforeNavigateExtended","time":"2021-0
-                           5-18T16:14:19.3990866Z","iKey":"o:0a89d516ae714e01ae89c96d185e9ae3","ext":{"utc":{"popSample
-                           ":50,"eventFlags":524546,"pgName":"WIN","flags":469762564,"epoch":"5901065","seq":6428},"met
+                           5-18T17:08:46.6756009Z","iKey":"o:0a89d516ae714e01ae89c96d185e9ae3","ext":{"utc":{"popSample
+                           ":50,"eventFlags":524546,"pgName":"WIN","flags":469762564,"epoch":"5901065","seq":6563},"met
                            adata":{"f":{"sessionID":8,"userInputID":8,"AppSessionGuid":8}},"os":{"bootId":58,"name":"Wi
                            ndows","ver":"10.0.18363.1440.amd64fre.19h1_release.190318-1202"},"app":{"id":"U:Microsoft.M
                            icrosoftEdge_44.18362.449.0_neutral__8wekyb3d8bbwe!MicrosoftEdge","ver":"44.18362.449.0_neut
-                           ral_!2079/11/26:09:41:53!1E050!microsoftedgecp.exe","asId":25826},"device":{"localId":"s:8FA
+                           ral_!2079/11/26:09:41:53!1E050!microsoftedgecp.exe","asId":26237},"device":{"localId":"s:8FA
                            50876-DF77-42F6-B2A1-CA2D1D6229F7","deviceClass":"Windows.Desktop"},"protocol":{"devMake":"V
                            Mware, Inc.","devModel":"VMware Virtual Platform"},"user":{"localId":"j:00847540-42CD-5ED8-2
-                           C47-0F1896FC2BAF"},"loc":{"tz":"-00:00"}},"data":{"sessionID":"D5A4A8E6-B7EE-11EB-B1D4-00505
-                           6ABB8A0","userInputID":"00000000-0000-0000-0000-000000000000","AppSessionGuid":"00005A5C-000
-                           2-003A-D75E-B051FD4BD701","tabId":402,"frameId":1375934547,"managerProcessId":1026,"navigati
-                           onUrlBytes":"0x646F67732E676F6F676C652E636F6D","navigationUrlRejectCode":0,"navigationLocati
-                           onUrlBytes":"0x","navigationLocationUrlRejectCode":30,"isNavLocUrlEqualToUrl":0,"isNavUrlTop
-                           LevelUrl":0,"deviceFeatureStatus":136,"isCortanaEnabled":0,"browserId":"{032D297E-FF55-488E-
-                           9307-C53C43DC560B}"}}
+                           C47-0F1896FC2BAF"},"loc":{"tz":"-00:00"}},"data":{"sessionID":"DFCAC27D-B7F9-11EB-B1D4-00505
+                           6ABB8A0","userInputID":"2BE4207C-34CF-4A55-BAB6-F3A2836DE786","AppSessionGuid":"00001A70-000
+                           2-003A-CF87-6B6C084CD701","tabId":402,"frameId":1348598048,"managerProcessId":1026,"navigati
+                           onUrlBytes":"0x647777772E6D736E2E636F6D","navigationUrlRejectCode":0,"navigationLocationUrlB
+                           ytes":"0x","navigationLocationUrlRejectCode":30,"isNavLocUrlEqualToUrl":0,"isNavUrlTopLevelU
+                           rl":1,"deviceFeatureStatus":136,"isCortanaEnabled":0,"browserId":"{032D297E-FF55-488E-9307-C
+                           53C43DC560B}"}}
 IsRequired               : False
 DiagnosticDataCategories : {1, 24}
-
-Name                     : Microsoft.Windows.App.Browser.HJ_NavigateCompleteExtended
-Timestamp                : 5/18/2021 4:14:19 PM
-Payload                  : {"ver":"4.0","name":"Microsoft.Windows.App.Browser.HJ_NavigateCompleteExtended","time":"2021
-                           -05-18T16:14:19.5506688Z","iKey":"o:0a89d516ae714e01ae89c96d185e9ae3","ext":{"utc":{"popSamp
-                           le":50,"eventFlags":524546,"pgName":"WIN","flags":469762564,"epoch":"5901065","seq":6429},"m
-                           etadata":{"f":{"sessionID":8,"userInputID":8,"AppSessionGuid":8,"correlationGuid":8}},"os":{
-                           "bootId":58,"name":"Windows","ver":"10.0.18363.1440.amd64fre.19h1_release.190318-1202"},"app
-                           ":{"id":"U:Microsoft.MicrosoftEdge_44.18362.449.0_neutral__8wekyb3d8bbwe!MicrosoftEdge","ver
-                           ":"44.18362.449.0_neutral_!2079/11/26:09:41:53!1E050!microsoftedgecp.exe","asId":25826},"dev
-                           ice":{"localId":"s:8FA50876-DF77-42F6-B2A1-CA2D1D6229F7","deviceClass":"Windows.Desktop"},"p
-                           rotocol":{"devMake":"VMware, Inc.","devModel":"VMware Virtual Platform"},"user":{"localId":"
-                           j:00847540-42CD-5ED8-2C47-0F1896FC2BAF"},"loc":{"tz":"-00:00"}},"data":{"sessionID":"D5A4A8E
-                           6-B7EE-11EB-B1D4-005056ABB8A0","userInputID":"00000000-0000-0000-0000-000000000000","AppSess
-                           ionGuid":"00005A5C-0002-003A-D75E-B051FD4BD701","tabId":402,"frameId":1375934547,"managerPro
-                           cessId":1026,"navigationUrlBytes":"0x646F67732E676F6F676C652E636F6D","navigationUrlRejectCod
-                           e":0,"navigationRefererBytes":"0x","navigationRefererRejectCode":107,"navigationLocationUrlB
-                           ytes":"0x","navigationLocationUrlRejectCode":0,"isNavRefererEqualToUrl":0,"isNavLocUrlEqualT
-                           oUrl":1,"isNavUrlTopLevelUrl":0,"httpStatusCode":0,"isCortanaEnabled":0,"browserId":"{032D29
-                           7E-FF55-488E-9307-C53C43DC560B}","correlationGuid":"00000000-0000-0000-0000-000000000000"}}
-IsRequired               : False
-DiagnosticDataCategories : {1}
+...
 ```
 
-As shown above, the navigationUrlBytes field contains the value 0x646F67732E676F6F676C652E636F6D. Decoded to ASCII this vaule is dogs.google.com. 
+As shown above, the navigationUrlBytes field contains the value 0x647777772E6D736E2E636F6D. Decoded to ASCII this vaule is dwww.msn.com. 
+
+{032D297E-FF55-488E-9307-C53C43DC560B}
 
 # TODO
 Add links to SQLECmd Map.
