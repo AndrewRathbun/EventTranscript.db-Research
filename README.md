@@ -132,6 +132,136 @@ EventTranscript.db isn't named by name in any of the below documentation, but al
 
 [Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy](https://docs.microsoft.com/en-us/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)
 
+## Parsing EventTranscript.db with PowerShell
+
+### Installation
+EventTranscript.db can be parsed with PowerShell. To interact with the service and retrieve the database contents you to install the Microsoft.DiagnosticsDataViewer PowerShell module as outlined at (https://docs.microsoft.com/en-us/windows/privacy/microsoft-diagnosticdataviewer). 
+
+```PowerShell
+Install-Module -Name Microsoft.DiagnosticDataViewer
+```
+
+The module is also available at PSGallery (https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer/2.0.0.1). 
+
+### Usage
+Usage of the PowerShell module is farily straight-forward but has a few issues. It allows for control of the logging capabilities the provided by the DiagTrack service. However, it requires installation of the Diagnostic Data Viewer application from the Microsoft Store. Once that is installed, you need to enable diagnostic data viewing via the Enable-DiagnosticDataViewing cmdlet. 
+
+```PowerShell
+PS C:\WINDOWS\system32> Enable-DiagnosticDataViewing
+Diagnostic Data Viewing is enabled now
+```
+
+Next, You can view the various categories of diagnostic data by using the Get-DiagnosticDataCategories. The documentation at (https://docs.microsoft.com/en-us/powershell/module/microsoft.diagnosticdataviewer/?view=windowsserver2019-ps) list the cmdlet as Get-DiagnosticDataTypes. As shown below, this is incorrect. 
+
+```PowerShell
+PS C:\WINDOWS\system32> Get-DiagnosticDataCategories
+
+Id Name                                  Description
+-- ----                                  -----------
+-1 Incorrect Data Category               Event is incorrectly categorized.  Microsoft is working on fixing such events
+ 1 Browsing History                      Records of the web browsing history when using the capabilities of the appl...
+11 Device Connectivity and Configuration Data that describes the connections and configuration of the devices connec...
+17 Inking Typing and Speech Utterance    Record of the input data provided by the end user through an interaction me...
+24 Product and Service Performance       Data collected about the measurement, performance and operation of the capa...
+25 Product and Service Usage             Data provided or captured about the end user’s interaction with the service...
+31 Software Setup and Inventory          Data that describes the installation, setup and update of software.
+
+
+PS C:\WINDOWS\system32> Get-DiagnosticDataTypes
+Get-DiagnosticDataTypes : The term 'Get-DiagnosticDataTypes' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is
+correct and try again.
+At line:1 char:1
++ Get-DiagnosticDataTypes
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-DiagnosticDataTypes:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+```
+
+From this point we are able to extract various diagnostic data and apply filters. The output is typically provided as JSON, but we can also export the data as a CSV. 
+
+```PowerShell
+PS C:\WINDOWS\temp> Get-DiagnosticData -DiagnosticDataCategory 31 -StartTime (Get-Date).AddHours(-12) -EndTime (Get-Date).AddHours(0) | Export-Csv 'tmp.csv'
+PS C:\WINDOWS\temp> head -n 3 .\tmp.csv
+#TYPE DDVCmdlets.Containers.EventRecord
+"Name","Timestamp","Payload","IsRequired","DiagnosticDataCategories"
+"Microsoft.Windows.StoreAgent.Telemetry.InstallOperationRequest","5/18/2021 3:31:42 PM","{""ver"":""4.0"",""name"":""Microsoft.Windows.StoreAgent.Telemetry.InstallOperationRequest"",""time"":""2021-05-18T15:31:42.5337494Z"",""iKey"":""o:0a89d516ae714e01ae89c96d185e9ae3"",""ext"":{""utc"":{""eventFlags"":514,""pgName"":""WINCORE"",""flags"":905970180,""epoch"":""5901065"",""seq"":6310},""mscv"":{""cV"":""F9pa8KoqmUOiQBHY.10.2""},""os"":{""bootId"":58,""name"":""Windows"",""ver"":""10.0.18363.1440.amd64fre.19h1_release.190318-1202""},""app"":{""id"":""U:Microsoft.WindowsStore_12104.1001.1.0_x64__8wekyb3d8bbwe!App"",""ver"":""12104.1001.1.0_x64_!2021/04/13:01:49:52!0!winstore.app.exe"",""asId"":25724},""device"":{""localId"":""s:8FA50876-DF77-42F6-B2A1-CA2D1D6229F7"",""deviceClass"":""Windows.Desktop""},""protocol"":{""devMake"":""VMware, Inc."",""devModel"":""VMware Virtual Platform""},""user"":{""localId"":""j:00847540-42CD-5ED8-2C47-0F1896FC2BAF""},""loc"":{""tz"":""-00:00""}},""data"":{""ProductId"":""9N8WTRRSQ8F7"",""SkuId"":""0010"",""CatalogId"":"""",""BundleId"":"""",""VolumePath"":""""}}","True","System.Collections.Generic.List`1[System.Int32]"
+```
+
+###  Moar Logs!!
+On several systems where we tested the logging functionality of EventTranscript.db and the DiagTrack service the Optional diagnostic data option was greyed out in the GUI. 
+
+![[Pasted image 20210518161731.png]]
+
+To manually enable the service we can modify the following registry keys:
+
+```PowerShell
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection\AllowTelemetry REG_DWORD 0x00000003
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection\MaxTelemetryAllowed REG_DWORD 0x00000003
+#and
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Policies\DataCollection\AllowTelemetry REG_DWORD 0x00000003
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Policies\DataCollection\MaxTelemetryAllowed REG_DWORD 0x00000003
+```
+
+
+![[Pasted image 20210518165200.png]]
+
+Once it is enabled, we can toggle the optional data collection categories. 
+
+![[Pasted image 20210518162055.png]]
+
+Optional data collection enables us to record web traffic visited by Internet Explorer and Edge. Unfortunately, collection of web traffic from FireFox and Google Chrome does not appear to be collected. 
+
+```PowerShell
+PS C:\WINDOWS\temp> Get-DiagnosticData -DiagnosticDataCategory 1 | head -n 45
+
+
+Name                     : Microsoft.Windows.App.Browser.HJ_BeforeNavigateExtended
+Timestamp                : 5/18/2021 4:14:19 PM
+Payload                  : {"ver":"4.0","name":"Microsoft.Windows.App.Browser.HJ_BeforeNavigateExtended","time":"2021-0
+                           5-18T16:14:19.3990866Z","iKey":"o:0a89d516ae714e01ae89c96d185e9ae3","ext":{"utc":{"popSample
+                           ":50,"eventFlags":524546,"pgName":"WIN","flags":469762564,"epoch":"5901065","seq":6428},"met
+                           adata":{"f":{"sessionID":8,"userInputID":8,"AppSessionGuid":8}},"os":{"bootId":58,"name":"Wi
+                           ndows","ver":"10.0.18363.1440.amd64fre.19h1_release.190318-1202"},"app":{"id":"U:Microsoft.M
+                           icrosoftEdge_44.18362.449.0_neutral__8wekyb3d8bbwe!MicrosoftEdge","ver":"44.18362.449.0_neut
+                           ral_!2079/11/26:09:41:53!1E050!microsoftedgecp.exe","asId":25826},"device":{"localId":"s:8FA
+                           50876-DF77-42F6-B2A1-CA2D1D6229F7","deviceClass":"Windows.Desktop"},"protocol":{"devMake":"V
+                           Mware, Inc.","devModel":"VMware Virtual Platform"},"user":{"localId":"j:00847540-42CD-5ED8-2
+                           C47-0F1896FC2BAF"},"loc":{"tz":"-00:00"}},"data":{"sessionID":"D5A4A8E6-B7EE-11EB-B1D4-00505
+                           6ABB8A0","userInputID":"00000000-0000-0000-0000-000000000000","AppSessionGuid":"00005A5C-000
+                           2-003A-D75E-B051FD4BD701","tabId":402,"frameId":1375934547,"managerProcessId":1026,"navigati
+                           onUrlBytes":"0x646F67732E676F6F676C652E636F6D","navigationUrlRejectCode":0,"navigationLocati
+                           onUrlBytes":"0x","navigationLocationUrlRejectCode":30,"isNavLocUrlEqualToUrl":0,"isNavUrlTop
+                           LevelUrl":0,"deviceFeatureStatus":136,"isCortanaEnabled":0,"browserId":"{032D297E-FF55-488E-
+                           9307-C53C43DC560B}"}}
+IsRequired               : False
+DiagnosticDataCategories : {1, 24}
+
+Name                     : Microsoft.Windows.App.Browser.HJ_NavigateCompleteExtended
+Timestamp                : 5/18/2021 4:14:19 PM
+Payload                  : {"ver":"4.0","name":"Microsoft.Windows.App.Browser.HJ_NavigateCompleteExtended","time":"2021
+                           -05-18T16:14:19.5506688Z","iKey":"o:0a89d516ae714e01ae89c96d185e9ae3","ext":{"utc":{"popSamp
+                           le":50,"eventFlags":524546,"pgName":"WIN","flags":469762564,"epoch":"5901065","seq":6429},"m
+                           etadata":{"f":{"sessionID":8,"userInputID":8,"AppSessionGuid":8,"correlationGuid":8}},"os":{
+                           "bootId":58,"name":"Windows","ver":"10.0.18363.1440.amd64fre.19h1_release.190318-1202"},"app
+                           ":{"id":"U:Microsoft.MicrosoftEdge_44.18362.449.0_neutral__8wekyb3d8bbwe!MicrosoftEdge","ver
+                           ":"44.18362.449.0_neutral_!2079/11/26:09:41:53!1E050!microsoftedgecp.exe","asId":25826},"dev
+                           ice":{"localId":"s:8FA50876-DF77-42F6-B2A1-CA2D1D6229F7","deviceClass":"Windows.Desktop"},"p
+                           rotocol":{"devMake":"VMware, Inc.","devModel":"VMware Virtual Platform"},"user":{"localId":"
+                           j:00847540-42CD-5ED8-2C47-0F1896FC2BAF"},"loc":{"tz":"-00:00"}},"data":{"sessionID":"D5A4A8E
+                           6-B7EE-11EB-B1D4-005056ABB8A0","userInputID":"00000000-0000-0000-0000-000000000000","AppSess
+                           ionGuid":"00005A5C-0002-003A-D75E-B051FD4BD701","tabId":402,"frameId":1375934547,"managerPro
+                           cessId":1026,"navigationUrlBytes":"0x646F67732E676F6F676C652E636F6D","navigationUrlRejectCod
+                           e":0,"navigationRefererBytes":"0x","navigationRefererRejectCode":107,"navigationLocationUrlB
+                           ytes":"0x","navigationLocationUrlRejectCode":0,"isNavRefererEqualToUrl":0,"isNavLocUrlEqualT
+                           oUrl":1,"isNavUrlTopLevelUrl":0,"httpStatusCode":0,"isCortanaEnabled":0,"browserId":"{032D29
+                           7E-FF55-488E-9307-C53C43DC560B}","correlationGuid":"00000000-0000-0000-0000-000000000000"}}
+IsRequired               : False
+DiagnosticDataCategories : {1}
+```
+
+As shown above, the navigationUrlBytes field contains the value 0x646F67732E676F6F676C652E636F6D. Decoded to ASCII this vaule is dogs.google.com. 
+
 # TODO
 Add links to SQLECmd Map.
 
