@@ -191,7 +191,7 @@ PS C:\WINDOWS\temp> head -n 3 .\tmp.csv
 ###  Moar Logs!!
 On several systems where we tested the logging functionality of EventTranscript.db and the DiagTrack service the Optional diagnostic data option was greyed out in the GUI. 
 
-![[Pasted image 20210518161731.png]]
+![Diagnostic and Feedback - Optional](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/Pasted%20image%2020210518161731.png)
 
 To manually enable the service we can modify the following registry keys:
 
@@ -204,11 +204,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Policie
 ```
 
 
-![[Pasted image 20210518165200.png]]
+![Windows Registry DataCollection](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/Pasted%20image%2020210518165200.png)
 
 Once it is enabled, we can toggle the optional data collection categories. 
 
-![[Pasted image 20210518162055.png]]
+![Improving Inking and Typing and Tailored Experiences](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/Pasted%20image%2020210518162055.png)
 
 Optional data collection enables us to record web traffic visited by Internet Explorer and Edge. Unfortunately, collection of web traffic from FireFox and Google Chrome does not appear to be collected. 
 
@@ -247,5 +247,5 @@ Add links to SQLECmd Map.
 
 Add section about using SQLECmd with KAPE.
 
-Add spreadsheet of 2,080 Full Event Names with Counts.
+Add spreadsheet of 2,699 Full Event Names with Counts.
 
