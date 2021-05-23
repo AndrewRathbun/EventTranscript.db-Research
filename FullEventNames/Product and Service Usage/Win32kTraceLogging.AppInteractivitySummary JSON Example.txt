@@ -1,0 +1,109 @@
+Size.exe
+https://www.virustotal.com/gui/file/6beb4a5bcbdaf33f697eea6a4f7f2e9704cc88c20c265d0ce42287d930d06345/community
+https://www.joesandbox.com/analysis/377823/0/html
+
+{
+	"ver": "4.0",
+	"name": "Win32kTraceLogging.AppInteractivitySummary",
+	"time": "2021-05-21T21:07:09.7696180Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"shellId": 33786497805320195,
+			"eventFlags": 258,
+			"pgName": "WIN",
+			"stId": "288E44E9-4E6F-4DED-B74F-4CB31F5E1638",
+			"flags": 469762608,
+			"epoch": "1105750",
+			"seq": 601
+		},
+		"metadata": {
+			"f": {
+				"PartATransform_AppSessionGuidToUserSid": 8,
+				"AppSessionId": 8,
+				"AggregationStartTime": 9,
+				"ViewFlags": 5,
+				"EventSequence": 5
+			},
+			"privTags": 33554432
+		},
+		"os": {
+			"bootId": 11,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0006200ed41a5508b16dcd14fbbc2bbae8f00000ffff!0000a93ebdd16c5862b178d6e5c58d3e074df772a021!size.exe",
+			"ver": "2019/12/05:07:37:23!0!size.exe",
+			"asId": 318
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1",
+			"ticketKeys": [
+				"2648478"
+			]
+		},
+		"user": {
+			"localId": "m:a5f16b5cd9dd213c"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"AppId": "W:0006200ed41a5508b16dcd14fbbc2bbae8f00000ffff!0000a93ebdd16c5862b178d6e5c58d3e074df772a021!size.exe",
+		"AppVersion": "2019/12/05:07:37:23!0!size.exe",
+		"CommandLineHash": 2437988017,
+		"AppSessionId": "000014D8-0001-000B-FCCF-6341854ED701",
+		"AggregationStartTime": "2021-05-21T20:57:26.2298826Z",
+		"AggregationDurationMS": 583531,
+		"InFocusDurationMS": 797,
+		"FocusLostCount": 2,
+		"NewProcessCount": 1,
+		"UserActiveDurationMS": 797,
+		"UserOrDisplayActiveDurationMS": 797,
+		"UserActiveTransitionCount": 0,
+		"InFocusBitmap": "0x0000002000000000",
+		"InputSec": 2,
+		"KeyboardInputSec": 0,
+		"SipKeyboardInputSec": 0,
+		"InjectedKeyboardInputSec": 0,
+		"MouseInputSec": 2,
+		"InjectedMouseInputSec": 0,
+		"TouchInputSec": 0,
+		"InjectedTouchInputSec": 0,
+		"PenInputSec": 0,
+		"InjectedPenInputSec": 0,
+		"PrecisionTouchpadInputSec": 0,
+		"InjectedPrecisionTouchpadInputSec": 0,
+		"HidInputSec": 0,
+		"WindowWidth": 527,
+		"WindowHeight": 393,
+		"MonitorWidth": 3326,
+		"MonitorHeight": 1964,
+		"MonitorFlags": 0,
+		"WindowFlags": 8,
+		"InteractiveTimeoutPeriodMS": 60000,
+		"AggregationPeriodMS": 1200000,
+		"BitPeriodMS": 20000,
+		"AggregationFlags": 49,
+		"SummaryRound": 1,
+		"SpeechRecognitionSec": 0,
+		"GameInputSec": 0,
+		"TargetAsId": 318,
+		"CompositionRenderedSec": 0,
+		"CompositionDirtyGeneratedSec": 1,
+		"CompositionDirtyPropagatedSec": 0,
+		"BackgroundMouseSec": 0,
+		"AudioInMS": 0,
+		"AudioOutMS": 0,
+		"ViewFlags": 0,
+		"SinceFirstInteractivityMS": 2531,
+		"EventSequence": 29
+	}
+}
