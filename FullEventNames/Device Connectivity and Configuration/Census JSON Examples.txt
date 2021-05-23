@@ -1,0 +1,1352 @@
+{
+	"ver": "4.0",
+	"name": "Census.Battery",
+	"time": "2021-05-21T15:20:23.0437036Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 546
+		},
+		"metadata": {
+			"privTags": 16779264
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"InternalBatteryCapablities": 4294967295,
+		"InternalBatteryCapacityCurrent": 4294967295,
+		"InternalBatteryCapacityDesign": 4294967295,
+		"InternalBatteryNumberOfCharges": 4294967295,
+		"IsAlwaysOnAlwaysConnectedCapable": "0"
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Enterprise",
+	"time": "2021-05-21T15:20:23.7522238Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 547
+		},
+		"metadata": {
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"IsCloudDomainJoined": "0",
+		"IsMDMEnrolled": "0",
+		"CDJType": 4294967295,
+		"ServerFeatures": "#",
+		"CommercialId": "#",
+		"AzureVMType": "#",
+		"AzureOSIDPresent": false,
+		"HashedDomain": "#",
+		"SystemCenterID": "#",
+		"MPNId": "#",
+		"SCCMClientId": "#",
+		"IsDeviceProtected": "DEVICE_NOT_PROTECTED|NO_FDV_EXISTS",
+		"IsDERequirementMet": "DEVICE_SOFTWARE_REQ_MET|HW_TPM_NOT_CONFIGRUED",
+		"IsEDPEnabled": "EDP_NOT_ENABLED|DPL_NONE",
+		"AADDeviceId": "#",
+		"ContainerType": 4294967295,
+		"EnrollmentType": 4294967295,
+		"MDMServiceProvider": "#"
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Firmware",
+	"time": "2021-05-21T15:20:23.7679581Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 548
+		},
+		"metadata": {
+			"f": {
+				"FirmwareType": 2
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"FirmwareManufacturer": "VMware, Inc.",
+		"FirmwareReleaseDate": "08/10/2020",
+		"FirmwareType": 2,
+		"FirmwareVersion": "VMW71.00V.16722896.B64.2008100651"
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Flighting",
+	"time": "2021-05-21T15:20:24.3230813Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 549
+		},
+		"metadata": {
+			"f": {
+				"DeviceSampleRate": 6
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"FlightIds": "FX:117B97D4,FX:117B9872,FX:1183210E,FX:119E26AD,FX:11C0E96C,FX:11C7EB6A,FX:11C9408A,FX:11C940DB,FX:11C96C7A,FX:11CB9A9F,FX:11CB9AC1,FX:11CC111C,FX:11D5BFCD,FX:11DF5B12,FX:11DF5B75",
+		"MSA_Accounts": "",
+		"IsFlightsDisabled": 0,
+		"FlightingBranchName": "#",
+		"DeviceSampleRate": 45.105174000000005,
+		"SSRK": "#",
+		"DriverTargetRing": "#",
+		"EnablePreviewBuilds": 4294967295
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.VM",
+	"time": "2021-05-21T15:20:24.3281390Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 550
+		},
+		"metadata": {
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"VirtualizationFirmwareEnabled": "0",
+		"SLATSupported": "0",
+		"IOMMUPresent": 0,
+		"IsVirtualDevice": "1",
+		"HyperVisor": 1,
+		"IsVDI": false,
+		"CloudService": "#",
+		"VMId": "AF904D56-3130-CCC7-CA60-1F0E66F71B81"
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Hardware",
+	"time": "2021-05-21T15:20:24.5615465Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 551
+		},
+		"metadata": {
+			"f": {
+				"ChassisType": 2,
+				"EnclosureKind": 2,
+				"TPMVersion": 2,
+				"DigitizerSupport": 2,
+				"ActiveMicCount": 2
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"ChassisType": 1,
+		"DeviceName": "#",
+		"EnclosureKind": -1,
+		"OEMDigitalMarkerFileName": "#",
+		"OEMManufacturerName": "VMware, Inc.",
+		"OEMModelNumber": "VMware7,1",
+		"OEMModelName": "#",
+		"OEMModelSKU": "",
+		"OEMModelBaseBoard": "440BX Desktop Reference Platform",
+		"OEMModelBaseBoardVersion": "None",
+		"OEMModelSystemFamily": "",
+		"OEMModelSystemVersion": "None",
+		"OEMOptionalIdentifier": "#",
+		"OEMSerialNumber": "VMware-56 4d 90 af 30 31 c7 cc-ca 60 1f 0e 66 f7 1b 81",
+		"PhoneManufacturer": "#",
+		"SoCName": "#",
+		"InventoryId": "{EF03816C-D381-BAA8-7904-7272C69C962F}",
+		"VoiceSupported": "PowerOff",
+		"D3DMaxFeatureLevel": "D3D_FEATURE_LEVEL_11_0",
+		"TPMManufacturerVersion": "#",
+		"TPMManufacturerId": "#",
+		"PowerPlatformRole": 1,
+		"TPMVersion": 0,
+		"StudyID": 0,
+		"TelemetryLevel": 3,
+		"TelemetrySettingAuthority": 2,
+		"DeviceForm": 0,
+		"DigitizerSupport": 0,
+		"ActiveMicCount": 1,
+		"Gyroscope": false,
+		"Magnetometer": false,
+		"NFCProximity": false,
+		"TelemetryLevelLimitEnhanced": 0
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Memory",
+	"time": "2021-05-21T15:20:24.5620681Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 552
+		},
+		"metadata": {
+			"f": {
+				"TotalPhysicalRAM": 2
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"TotalPhysicalRAM": 2048,
+		"TotalVisibleMemory": 2046
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Network",
+	"time": "2021-05-21T15:20:24.5670110Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 553
+		},
+		"metadata": {
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"MobileOperatorBilling": "#",
+		"MobileOperatorCommercialized": "#",
+		"NetworkAdapterGUID": "{DAB58C59-7489-47B2-A299-B4432683CDB2}",
+		"IMEI0": "#",
+		"SPN0": "#",
+		"MobileOperatorNetwork0": "#",
+		"MCC0": "#",
+		"MNC0": "#",
+		"IMEI1": "#",
+		"SPN1": "#",
+		"MobileOperatorNetwork1": "#",
+		"MCC1": "#",
+		"MNC1": "#",
+		"MEID": "#"
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.OS",
+	"time": "2021-05-21T15:20:24.8056425Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 554
+		},
+		"metadata": {
+			"f": {
+				"LicenseStateReason": 2,
+				"ProductActivationTime": 5
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"GenuineState": 0,
+		"IsPortableOperatingSystem": "0",
+		"IsSecureBootEnabled": "0",
+		"OSEdition": "Professional",
+		"InstallationType": "Client",
+		"OSInstallType": 1,
+		"OSOOBEDateTime": "2021-05-20T13:49:22.552",
+		"OSSKU": 48,
+		"DeviceTimeZone": "Pacific Standard Time",
+		"OSUILocale": "en-US",
+		"RACw7Id": "#",
+		"CompactOS": "1",
+		"Signature": 4294967295,
+		"IsDeviceRetailDemo": 0,
+		"ActivationChannel": "Retail",
+		"LicenseStateReason": 1074066433,
+		"OA3xOriginalProductKey": "#",
+		"ProductKeyID2": "00330-81495-05788-AA244",
+		"ServiceMachineIP": "",
+		"ServiceProductKeyID": "",
+		"ServiceMachinePort": 0,
+		"OSSubscriptionTypeId": 4294967295,
+		"OSSubscriptionStatus": 4294967295,
+		"SLICVersion": 4294967295,
+		"SLICStatus": 0,
+		"LanguagePacks": "en-US;",
+		"InstallLanguage": "en-US",
+		"IsEduData": 0,
+		"SharedPCMode": 4294967295,
+		"ProductActivationTime": 0,
+		"ProductActivationResult": 4294967295,
+		"AssignedAccessStatus": "None",
+		"DeveloperUnlockStatus": 0
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.PrivacySettings",
+	"time": "2021-05-21T15:20:25.0327115Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 258,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 555
+		},
+		"metadata": {
+			"f": {
+				"Activity": 2,
+				"AppDiagnostics": 2,
+				"Appointments": 2,
+				"Bluetooth": 2,
+				"BluetoothSync": 2,
+				"BroadFileSystemAccess": 2,
+				"CellularData": 2,
+				"Chat": 2,
+				"Contacts": 2,
+				"DocumentsLibrary": 2,
+				"Email": 2,
+				"GazeInput": 2,
+				"HumanInterfaceDevice": 2,
+				"Location": 2,
+				"LocationHistory": 2,
+				"Microphone": 2,
+				"PhoneCall": 2,
+				"PhoneCallHistory": 2,
+				"PicturesLibrary": 2,
+				"Radios": 2,
+				"SensorsCustom": 2,
+				"SerialCommunication": 2,
+				"Sms": 2,
+				"USB": 2,
+				"UserAccountInformation": 2,
+				"UserDataTasks": 2,
+				"UserNotificationListener": 2,
+				"VideosLibrary": 2,
+				"Webcam": 2,
+				"WifiData": 2,
+				"WiFiDirect": 2,
+				"ActivityHistoryCollection": 2,
+				"ActivityHistoryCloudSync": 2,
+				"AdvertisingId": 2,
+				"SpeechPersonalization": 2,
+				"InkTypeImprovement": 2,
+				"FindMyDevice": 2
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"Activity": 256,
+		"AppDiagnostics": 256,
+		"Appointments": 256,
+		"Bluetooth": 256,
+		"BluetoothSync": 256,
+		"BroadFileSystemAccess": 256,
+		"CellularData": 256,
+		"Chat": 256,
+		"Contacts": 256,
+		"DocumentsLibrary": 256,
+		"Email": 256,
+		"GazeInput": 256,
+		"HumanInterfaceDevice": 256,
+		"Location": 256,
+		"LocationHistory": 256,
+		"Microphone": 256,
+		"PhoneCall": 256,
+		"PhoneCallHistory": 256,
+		"PicturesLibrary": 256,
+		"Radios": 256,
+		"SensorsCustom": 256,
+		"SerialCommunication": 256,
+		"Sms": 256,
+		"USB": 256,
+		"UserAccountInformation": 256,
+		"UserDataTasks": 256,
+		"UserNotificationListener": 256,
+		"VideosLibrary": 256,
+		"Webcam": 256,
+		"WifiData": 256,
+		"WiFiDirect": 256,
+		"ActivityHistoryCollection": -258,
+		"ActivityHistoryCloudSync": -258,
+		"AdvertisingId": 256,
+		"SpeechPersonalization": 517,
+		"InkTypeImprovement": 262,
+		"FindMyDevice": 512
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Processor",
+	"time": "2021-05-21T15:20:25.0330523Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 556
+		},
+		"metadata": {
+			"f": {
+				"ProcessorCores": 2,
+				"ProcessorPhysicalCores": 2,
+				"ProcessorUpdateRevision": 5,
+				"PreviousUpdateRevision": 5,
+				"SocketCount": 2
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"ProcessorCores": 2,
+		"ProcessorPhysicalCores": 2,
+		"ProcessorArchitecture": 9,
+		"ProcessorClockSpeed": 2400,
+		"ProcessorManufacturer": "GenuineIntel",
+		"ProcessorModel": "Intel(R) Core(TM) i9-9980HK CPU @ 2.40GHz",
+		"ProcessorIdentifier": "Intel64 Family 6 Model 158 Stepping 13",
+		"ProcessorUpdateRevision": 816043786240,
+		"PreviousUpdateRevision": 816043786240,
+		"SocketCount": 1,
+		"KvaShadow": 416,
+		"SpeculationControl": 92378105,
+		"MMSettingOverride": 4294967295,
+		"MMSettingOverrideMask": 4294967295,
+		"ProcessorUpdateStatus": 2
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Security",
+	"time": "2021-05-21T15:20:25.1678469Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 557
+		},
+		"metadata": {
+			"f": {
+				"DGState": 5,
+				"WdagPolicyValue": 2
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"HVCIRunning": false,
+		"CGRunning": false,
+		"VBSState": 0,
+		"SecureBootCapable": 1,
+		"RequiredSecurityProperties": 0,
+		"AvailableSecurityProperties": 56,
+		"SModeState": 0,
+		"IsSawHost": false,
+		"IsSawGuest": false,
+		"DGState": 469762561,
+		"IsWdagFeatureEnabled": 4294967295,
+		"WdagPolicyValue": 0,
+		"TpmReadyState": 255,
+		"SystemGuardState": 0,
+		"ShadowStack": 0
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Speech",
+	"time": "2021-05-21T15:20:25.1683531Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 258,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 558
+		},
+		"metadata": {
+			"f": {
+				"RemotelyManaged": 2,
+				"GPAllowInputPersonalization": 2,
+				"MDMAllowInputPersonalization": 2,
+				"KeyVer": 2,
+				"SpeechServicesValueSource": 2
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"KWSEnabled": "DSMAUser:[]LastLoggedOnUser:[(0,1)]DeviceUsers:[(0,1)]",
+		"SpeakerIdEnabled": "DSMAUser:[]LastLoggedOnUser:[(2,1)]DeviceUsers:[(2,1)]",
+		"AboveLockEnabled": "DSMAUser:[]LastLoggedOnUser:[(0,1)]DeviceUsers:[(0,1)]",
+		"HolographicSpeechInputDisabled": "DSMAUser:[]LastLoggedOnUser:[(1,1)]DeviceUsers:[(1,1)]",
+		"HolographicSpeechInputDisabledRemote": "DSMAUser:[]LastLoggedOnUser:[(2,1)]DeviceUsers:[(2,1)]",
+		"SpeechServicesEnabled": "DSMAUser:[]LastLoggedOnUser:[(0,1)]DeviceUsers:[(0,1)]",
+		"RemotelyManaged": 100,
+		"GPAllowInputPersonalization": 1,
+		"MDMAllowInputPersonalization": 100,
+		"KeyVer": 2,
+		"SpeechServicesValueSource": 1
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Storage",
+	"time": "2021-05-21T15:20:25.1685580Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 559
+		},
+		"metadata": {
+			"f": {
+				"PrimaryDiskTotalCapacity": 4,
+				"SystemVolumeTotalCapacity": 4
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"PrimaryDiskTotalCapacity": 61440,
+		"SystemVolumeTotalCapacity": 60821,
+		"PrimaryDiskType": 4,
+		"StorageReservePassedPolicy": 1
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.WU",
+	"time": "2021-05-21T15:20:26.3703825Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 503317040,
+			"epoch": "600830",
+			"seq": 561
+		},
+		"metadata": {
+			"f": {
+				"WUDeferUpgradePeriod": 2,
+				"WUDeferUpdatePeriod": 2
+			},
+			"privTags": 2147485696
+		},
+		"mscv": {
+			"cV": "R3+hicuwW0iwwxxP.0",
+			"cV": "t/q4SyOHC0S915Bo.0"
+		},
+		"os": {
+			"bootId": 6,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 483
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1"
+		},
+		"user": {
+			"localId": "w:76EFB15A-BF32-7E7D-871F-8EF13C84CA70"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"WUMachineId": "90d11724-7e1d-4720-8024-a053531cb000",
+		"WUServer": "#",
+		"WUDODownloadMode": 1,
+		"OSWUAutoUpdateOptions": 4,
+		"OSWUAutoUpdateOptionsSource": "Default",
+		"AppStoreAutoUpdate": 4294967295,
+		"AppStoreAutoUpdatePolicy": 4294967295,
+		"AppStoreAutoUpdateMDM": 2,
+		"DelayUpgrade": "False",
+		"UpdateServiceURLConfigured": "0",
+		"WUDeferUpgradePeriod": -1,
+		"WUDeferUpdatePeriod": -1,
+		"WUPauseState": "#",
+		"OSUninstalled": false,
+		"OSRolledBack": false,
+		"OSRollbackCount": 4294967295,
+		"UninstallActive": 4294967295,
+		"AppraiserGatedStatus": "#",
+		"OSAssessmentForFeatureUpdate": 0,
+		"OSAssessmentForQualityUpdate": 0,
+		"OSAssessmentForSecurityUpdate": 0,
+		"OSAssessmentFeatureOutOfDate": 0,
+		"OSAssessmentQualityOutOfDate": 0,
+		"OSAssessmentReleaseInfoTime": "2021-05-18T22:54:57.039"
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.UserDisplay",
+	"time": "2021-05-21T19:48:44.9992182Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"shellId": 33786497805320195,
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 506462768,
+			"epoch": "900325",
+			"seq": 1745
+		},
+		"metadata": {
+			"f": {
+				"InternalPrimaryDisplayResolutionHorizontal": 2,
+				"InternalPrimaryDisplayResolutionVertical": 2,
+				"InternalPrimaryDisplaySizePhysicalH": 2,
+				"InternalPrimaryDisplaySizePhysicalY": 2,
+				"NumberofInternalDisplays": 2,
+				"NumberofExternalDisplays": 2
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "7g3Zq7GhHky8hrJR.0",
+			"cV": "7+xGrpmFek2DSzyo.0"
+		},
+		"os": {
+			"bootId": 9,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 1087
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1",
+			"ticketKeys": [
+				"23810040"
+			]
+		},
+		"user": {
+			"localId": "m:a5f16b5cd9dd213c"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"InternalPrimaryDisplayLogicalDPIX": 96,
+		"InternalPrimaryDisplayLogicalDPIY": 96,
+		"InternalPrimaryDisplayPhysicalDPIX": 4294967295,
+		"InternalPrimaryDisplayPhysicalDPIY": 4294967295,
+		"InternalPrimaryDisplayResolutionHorizontal": 3326,
+		"InternalPrimaryDisplayResolutionVertical": 1964,
+		"InternalPrimaryDisplaySizePhysicalH": 880,
+		"InternalPrimaryDisplaySizePhysicalY": 520,
+		"NumberofInternalDisplays": 0,
+		"NumberofExternalDisplays": 1,
+		"VRAMDedicated": 4,
+		"VRAMDedicatedSystem": 0,
+		"VRAMSharedSystem": 1023
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.UserNLS",
+	"time": "2021-05-21T19:48:45.3172670Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"shellId": 33786497805320195,
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 506462768,
+			"epoch": "900325",
+			"seq": 1746
+		},
+		"metadata": {
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "7g3Zq7GhHky8hrJR.0",
+			"cV": "7+xGrpmFek2DSzyo.0"
+		},
+		"os": {
+			"bootId": 9,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 1087
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1",
+			"ticketKeys": [
+				"23810040"
+			]
+		},
+		"user": {
+			"localId": "m:a5f16b5cd9dd213c"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"DefaultAppLanguage": "en-US",
+		"HomeLocation": 244,
+		"DisplayLanguage": "en-US",
+		"SpeechInputLanguages": "en-US",
+		"KeyboardInputLanguages": "0409:00000409;"
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.Userdefault",
+	"time": "2021-05-21T19:48:45.3180543Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"shellId": 33786497805320195,
+			"eventFlags": 514,
+			"pgName": "WINCORE",
+			"flags": 506462768,
+			"epoch": "900325",
+			"seq": 1747
+		},
+		"metadata": {
+			"privTags": 2147485696
+		},
+		"mscv": {
+			"cV": "7g3Zq7GhHky8hrJR.0",
+			"cV": "7+xGrpmFek2DSzyo.0"
+		},
+		"os": {
+			"bootId": 9,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 1087
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1",
+			"ticketKeys": [
+				"23810040"
+			]
+		},
+		"user": {
+			"localId": "m:a5f16b5cd9dd213c"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"DefaultBrowserProgId": "MSEdgeHTM",
+		"DefaultApp": ".html:MSEdgeHTM|.htm:MSEdgeHTM|.jpg:AppX43hnxtbyyps62jhe9sqpdzxn1790zetc|.jpeg:AppX43hnxtbyyps62jhe9sqpdzxn1790zetc|.png:AppX43hnxtbyyps62jhe9sqpdzxn1790zetc|.mp3:AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs|.mp4:AppX6eg8h5sxqq90pv53845wmnbewywdqq5h|.mov:AppX6eg8h5sxqq90pv53845wmnbewywdqq5h|.pdf:MSEdgePDF|http:MSEdgeHTM|https:MSEdgeHTM|mailto:AppXydk58wgm44se4b399557yyyj1w7mbmvd",
+		"CalendarType": "1",
+		"ShortDateFormat": "M/d/yyyy",
+		"LongDateFormat": "dddd, MMMM d, yyyy",
+		"LocaleName": "en-US"
+	}
+},
+{
+	"ver": "4.0",
+	"name": "Census.UserPrivacySettings",
+	"time": "2021-05-21T19:48:45.5857362Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"shellId": 33786497805320195,
+			"eventFlags": 258,
+			"pgName": "WINCORE",
+			"flags": 506462768,
+			"epoch": "900325",
+			"seq": 1748
+		},
+		"metadata": {
+			"f": {
+				"Activity": 2,
+				"AppDiagnostics": 2,
+				"Appointments": 2,
+				"Bluetooth": 2,
+				"BluetoothSync": 2,
+				"BroadFileSystemAccess": 2,
+				"CellularData": 2,
+				"Chat": 2,
+				"Contacts": 2,
+				"DocumentsLibrary": 2,
+				"Email": 2,
+				"GazeInput": 2,
+				"HumanInterfaceDevice": 2,
+				"Location": 2,
+				"LocationHistory": 2,
+				"Microphone": 2,
+				"PhoneCall": 2,
+				"PhoneCallHistory": 2,
+				"PicturesLibrary": 2,
+				"Radios": 2,
+				"SensorsCustom": 2,
+				"SerialCommunication": 2,
+				"Sms": 2,
+				"USB": 2,
+				"UserAccountInformation": 2,
+				"UserDataTasks": 2,
+				"UserNotificationListener": 2,
+				"VideosLibrary": 2,
+				"Webcam": 2,
+				"WifiData": 2,
+				"WiFiDirect": 2,
+				"ActivityHistoryCollection": 2,
+				"ActivityHistoryCloudSync": 2,
+				"AdvertisingId": 2,
+				"SpeechPersonalization": 2,
+				"InkTypePersonalization": 2,
+				"InkTypeImprovement": 2
+			},
+			"privTags": 2048
+		},
+		"mscv": {
+			"cV": "7g3Zq7GhHky8hrJR.0",
+			"cV": "7+xGrpmFek2DSzyo.0"
+		},
+		"os": {
+			"bootId": 9,
+			"name": "Windows",
+			"ver": "10.0.19043.985.amd64fre.vb_release.191206-1406"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!00009914f5914c02add1d3590844a628b3c5a5fa2c48!devicecensus.exe",
+			"ver": "2039/05/19:12:13:02!18342!devicecensus.exe",
+			"asId": 1087
+		},
+		"device": {
+			"localId": "s:6765A30B-E04D-4B4A-9954-55AA49BA79EF",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "VMware, Inc.",
+			"devModel": "VMware7,1",
+			"ticketKeys": [
+				"23813156"
+			]
+		},
+		"user": {
+			"localId": "m:a5f16b5cd9dd213c"
+		},
+		"loc": {
+			"tz": "-07:00"
+		}
+	},
+	"data": {
+		"Activity": 256,
+		"AppDiagnostics": 256,
+		"Appointments": 256,
+		"Bluetooth": 256,
+		"BluetoothSync": 256,
+		"BroadFileSystemAccess": 256,
+		"CellularData": 256,
+		"Chat": 256,
+		"Contacts": 256,
+		"DocumentsLibrary": 256,
+		"Email": 256,
+		"GazeInput": 256,
+		"HumanInterfaceDevice": 256,
+		"Location": 256,
+		"LocationHistory": 256,
+		"Microphone": 256,
+		"PhoneCall": 256,
+		"PhoneCallHistory": 256,
+		"PicturesLibrary": 256,
+		"Radios": 256,
+		"SensorsCustom": 256,
+		"SerialCommunication": 256,
+		"Sms": 256,
+		"USB": 256,
+		"UserAccountInformation": 256,
+		"UserDataTasks": 256,
+		"UserNotificationListener": 256,
+		"VideosLibrary": 256,
+		"Webcam": 256,
+		"WifiData": 256,
+		"WiFiDirect": 256,
+		"ActivityHistoryCollection": 256,
+		"ActivityHistoryCloudSync": 512,
+		"AdvertisingId": 256,
+		"SpeechPersonalization": 517,
+		"InkTypePersonalization": 256,
+		"InkTypeImprovement": 256
+	}
+}
