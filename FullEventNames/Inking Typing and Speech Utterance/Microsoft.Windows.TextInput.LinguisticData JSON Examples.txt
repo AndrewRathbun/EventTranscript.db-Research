@@ -1,0 +1,227 @@
+{
+  ver: 4.0,
+  name: Microsoft.Windows.TextInput.LinguisticData.ShapeWrittenText,
+  time: "2021-05-22T20:30:45.9808878Z",
+  iKey: "o:0a89d516ae714e01ae89c96d185e9ae3",
+  ext: 
+  {
+    utc: 
+    {
+      shellId: 33786497918042115,
+      eventFlags: 2621697,
+      pgName: WIN,
+      flags: 742394672,
+      providerGuid: 864C5689-9310-594C-5CEF-000695F5ACE8,
+      loggingBinary: InputService.dll
+    },
+    metadata: 
+    {
+      f: 
+      {
+        editId: 8
+      },
+      privTags: 131072
+    },
+    os: 
+    {
+      bootId: 86,
+      name: Windows,
+      ver: 10.0.19043.985.amd64fre.vb_release.191206-1406,
+      expId: "FX:114145DF,FX:1152FE25,FX:1152FF13,FX:118C9A83,FX:118FEB19,FX:11BAF854,FX:11CC1118,FX:11D5BFCD,FX:11DF5B46,FX:11DF5B86"
+    },
+    app: 
+    {
+      id: "W:0000f519feec486de87ed73cb92d3cac802400000000!0000abb864e1911c59f785b0e1822701b9a5ab31ba1e!ctfmon.exe",
+      ver: "2021/06/12:00:23:36!118E7!ctfmon.exe",
+      asId: 31926
+    },
+    device: 
+    {
+      localId: "r:10777549386564349867",
+      deviceClass: Windows.Desktop
+    },
+    protocol: 
+    {
+      devMake: System manufacturer,
+      devModel: System Product Name
+    },
+    xbl: 
+    {
+      sbx: RETAIL,
+      xid: "x:"
+    },
+    loc: 
+    {
+      tz: "-04:00"
+    }
+  },
+  data: 
+  {
+    editId: 00000000-0000-0000-0000-000000000000,
+    applicationName: SearchApp.exe,
+    inputScope: 52,
+    userText: "{
+      ""runs"": 
+      [
+        {
+          ""locale"": ""en-US"", ""words"":
+          [
+            {
+              ""word"": ""calc""
+            }
+          ]
+        }
+      ]
+    }
+
+{
+  ver: 4.0,
+  name: Microsoft.Windows.TextInput.LinguisticData.DPTipcSample,
+  time: "2021-05-21T02:50:35.7911634Z",
+  iKey: "o:0a89d516ae714e01ae89c96d185e9ae3",
+  ext: 
+  {
+    utc: 
+    {
+      shellId: 33786497918042115,
+      eventFlags: 2621697,
+      pgName: WIN,
+      flags: 742394672,
+      providerGuid: 864C5689-9310-594C-5CEF-000695F5ACE8,
+      loggingBinary: InputService.dll
+    },
+    metadata: 
+    {
+      f: 
+      {
+        editId: 8
+      },
+      privTags: 131072
+    },
+    os: 
+    {
+      bootId: 86,
+      name: Windows,
+      ver: 10.0.19043.985.amd64fre.vb_release.191206-1406,
+      expId: "FX:114145DF,FX:1152FE25,FX:1152FF13,FX:118C9A83,FX:118FEB19,FX:11BAF854,FX:11CC1118,FX:11D5BFCD,FX:11DF5B46,FX:11DF5B86"
+    },
+    app: 
+    {
+      id: "W:0000f519feec486de87ed73cb92d3cac802400000000!0000abb864e1911c59f785b0e1822701b9a5ab31ba1e!ctfmon.exe",
+      ver: "2021/06/12:00:23:36!118E7!ctfmon.exe",
+      asId: 18742
+    },
+    device: 
+    {
+      localId: "r:14305086207568640939",
+      deviceClass: Windows.Desktop
+    },
+    protocol: 
+    {
+      devMake: System manufacturer,
+      devModel: System Product Name
+    },
+    xbl: 
+    {
+      sbx: RETAIL,
+      xid: "x:"
+    },
+    loc: 
+    {
+      tz: "-04:00"
+    }
+  },
+  data: 
+  {
+    editId: 00000000-0000-0000-0000-000000000000,
+    applicationName: Todo.exe,
+    inputScope: 57,
+    userText: "{
+      ""runs"": 
+      [
+        {
+          ""locale"": ""en-US"", ""words"":
+          [
+            {
+              ""word"": ""https:\/\/labs.sentinelone.com\/building-a-custom-malware-analysis-lab-environment\/""
+            }
+          ]
+        }
+      ]
+    }
+
+{
+  ver: 4.0,
+  name: Microsoft.Windows.TextInput.LinguisticData.DPTipcSample,
+  time: "2021-05-20T19:45:33.6301409Z",
+  iKey: "o:0a89d516ae714e01ae89c96d185e9ae3",
+  ext: 
+  {
+    utc: 
+    {
+      shellId: 33786497918042115,
+      eventFlags: 2621697,
+      pgName: WIN,
+      flags: 742394672,
+      providerGuid: 864C5689-9310-594C-5CEF-000695F5ACE8,
+      loggingBinary: InputService.dll
+    },
+    metadata: 
+    {
+      f: 
+      {
+        editId: 8
+      },
+      privTags: 131072
+    },
+    os: 
+    {
+      bootId: 86,
+      name: Windows,
+      ver: 10.0.19043.985.amd64fre.vb_release.191206-1406,
+      expId: "FX:114145DF,FX:1152FE25,FX:1152FF13,FX:118C9A83,FX:118FEB19,FX:11BAF854,FX:11CC1118,FX:11D5BFCD,FX:11DF5B46,FX:11DF5B86"
+    },
+    app: 
+    {
+      id: "W:0000f519feec486de87ed73cb92d3cac802400000000!0000abb864e1911c59f785b0e1822701b9a5ab31ba1e!ctfmon.exe",
+      ver: "2021/06/12:00:23:36!118E7!ctfmon.exe",
+      asId: 18742
+    },
+    device: 
+    {
+      localId: "r:13653532424194119499",
+      deviceClass: Windows.Desktop
+    },
+    protocol: 
+    {
+      devMake: System manufacturer,
+      devModel: System Product Name
+    },
+    xbl: 
+    {
+      sbx: RETAIL,
+      xid: "x:"
+    },
+    loc: 
+    {
+      tz: "-04:00"
+    }
+  },
+  data: 
+  {
+    editId: 00000000-0000-0000-0000-000000000000,
+    applicationName: YourPhone.exe,
+    inputScope: 57,
+    userText: "{
+      ""runs"": 
+      [
+        {
+          ""locale"": ""en-US"", ""words"":
+          [
+            {
+              ""word"": ""recently?""
+            }
+          ]
+        }
+      ]
+    }
