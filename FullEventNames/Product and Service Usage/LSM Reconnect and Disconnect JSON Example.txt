@@ -1,0 +1,142 @@
+{
+	"ver": "4.0",
+	"name": "LSM.ReconnectTime",
+	"time": "2021-04-24T16:46:28.8756290Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"aId": "F420C668-995E-4D66-BAC8-7FAD4A7C0000",
+			"eventFlags": 257,
+			"pgName": "WIN",
+			"flags": 744491824,
+			"providerGuid": "557D257B-180E-4AAE-8F06-86C4E46E9D00",
+			"loggingBinary": "lsm.dll",
+			"epoch": "6606117",
+			"seq": 158398
+		},
+		"metadata": {
+			"f": {
+				"ConnectTime": 5,
+				"TimeToConnect": 5,
+				"stConnectTime": 9,
+				"stReconnectTime": 9,
+				"TimeToConnectSeconds": 5,
+				"ActivityID": 8
+			},
+			"privTags": 33554432
+		},
+		"os": {
+			"bootId": 79,
+			"name": "Windows",
+			"ver": "10.0.19043.962.amd64fre.vb_release.191206-1406",
+			"expId": "FX:114145DF,FX:1152FE25,FX:1152FF13,FX:118C9A83,FX:118FEB19,FX:11BAF854,FX:11CC1118,FX:11D5BFCD,FX:11DF5B46,FX:11DF5B86"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!0000010db07461e45b41c886192df6fd425ba8d42d82!svchost.exe",
+			"ver": "1972/12/14:16:22:50!1C364!svchost.exe",
+			"asId": 18
+		},
+		"device": {
+			"localId": "s:D2738014-A1C9-4A0A-8E55-7B6184029538",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "System manufacturer",
+			"devModel": "System Product Name",
+			"ticketKeys": [
+				"2076477998"
+			]
+		},
+		"user": {
+			"localId": "m:4b30d36f9be11107"
+		},
+		"xbl": {
+			"sbx": "RETAIL",
+			"did": "F900E802E00B88C5",
+			"xid": "x:2533274804582403"
+		},
+		"loc": {
+			"tz": "-04:00"
+		}
+	},
+	"data": {
+		"ConnectTime": 132637563888480428,
+		"TimeToConnect": 1879889,
+		"stConnectTime": "2021-04-24T16:46:28.8480000Z",
+		"stReconnectTime": "2021-04-24T16:46:28.6600000Z",
+		"TimeToConnectSeconds": 0,
+		"ActivityID": "F420C668-995E-4D66-BAC8-7FAD4A7C0000"
+	}
+},
+{
+	"ver": "4.0",
+	"name": "LSM.DisconnectTime",
+	"time": "2021-04-24T16:47:30.7124741Z",
+	"iKey": "o:0a89d516ae714e01ae89c96d185e9ae3",
+	"ext": {
+		"utc": {
+			"aId": "F420C668-995E-4D66-BAC8-7FAD4A7C0000",
+			"eventFlags": 257,
+			"pgName": "WIN",
+			"flags": 743443248,
+			"providerGuid": "557D257B-180E-4AAE-8F06-86C4E46E9D00",
+			"loggingBinary": "lsm.dll",
+			"epoch": "6606117",
+			"seq": 158873
+		},
+		"metadata": {
+			"f": {
+				"DisconnectTime": 5,
+				"LogonTime": 5,
+				"ActivityID": 8,
+				"ConnectTime": 5,
+				"ConnectionDuration": 5,
+				"ConnectionDurationSeconds": 5,
+				"this->stConnectTime": 9,
+				"this->stDisconnectTime": 9,
+				"this->stLogonTime": 9
+			},
+			"privTags": 33554432
+		},
+		"os": {
+			"bootId": 79,
+			"name": "Windows",
+			"ver": "10.0.19043.962.amd64fre.vb_release.191206-1406",
+			"expId": "FX:114145DF,FX:1152FE25,FX:1152FF13,FX:118C9A83,FX:118FEB19,FX:11BAF854,FX:11CC1118,FX:11D5BFCD,FX:11DF5B46,FX:11DF5B86"
+		},
+		"app": {
+			"id": "W:0000f519feec486de87ed73cb92d3cac802400000000!0000010db07461e45b41c886192df6fd425ba8d42d82!svchost.exe",
+			"ver": "1972/12/14:16:22:50!1C364!svchost.exe",
+			"asId": 18
+		},
+		"device": {
+			"localId": "s:D2738014-A1C9-4A0A-8E55-7B6184029538",
+			"deviceClass": "Windows.Desktop"
+		},
+		"protocol": {
+			"devMake": "System manufacturer",
+			"devModel": "System Product Name"
+		},
+		"user": {
+			"localId": "w:B04E2543-63EB-D3C6-4722-FBFE64FA31C0"
+		},
+		"xbl": {
+			"sbx": "RETAIL",
+			"did": "F900E802E00B88C5"
+		},
+		"loc": {
+			"tz": "-04:00"
+		}
+	},
+	"data": {
+		"DisconnectTime": 132637564443895608,
+		"LogonTime": 132635984783438014,
+		"ActivityID": "F420C668-995E-4D66-BAC8-7FAD4A7C0000",
+		"ConnectTime": 132637563888480428,
+		"ConnectionDuration": 555415180,
+		"ConnectionDurationSeconds": 55,
+		"this->stConnectTime": "2021-04-24T16:46:28.8480000Z",
+		"this->stDisconnectTime": "2021-04-24T16:47:30.6840000Z",
+		"this->stLogonTime": "2021-04-24T15:17:44.6690000Z"
+	}
+}
