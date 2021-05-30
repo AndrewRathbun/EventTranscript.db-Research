@@ -451,6 +451,7 @@ Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.ExecuteSearch
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.GotResultFiles
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.NavigatedToSettingsPage
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.RelatedQueriesServiceData
+Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.SetBooleanValue
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.SettingsAppPageLaunch
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.SettingsAppStartup
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.ShowMoreResults
