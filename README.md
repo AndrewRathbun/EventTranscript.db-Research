@@ -210,7 +210,7 @@ Once it is enabled, we can toggle the optional data collection categories.
 
 ![Improving Inking and Typing and Tailored Experiences](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/Pasted%20image%2020210518162055.png)
 
-Optional data collection enables us to record web traffic visited by Internet Explorer and Edge. Unfortunately, collection of web traffic from FireFox and Google Chrome does not appear to be collected. 
+Optional data collection enables us to record web traffic visited by Internet Explorer and Edge. Unfortunately, collection of web traffic from Firefox and Google Chrome does not appear to be collected. 
 
 ```PowerShell
 PS C:\WINDOWS\temp> Get-DiagnosticData -DiagnosticDataCategory 1 
