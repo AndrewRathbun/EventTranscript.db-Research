@@ -1103,6 +1103,7 @@ Microsoft.Windows.Shell.SHCore.SHSetWindowSubclass
 Microsoft.Windows.Shell.SHCore.SHSetWindowSubclassResult
 Microsoft.Windows.Shell.SingleViewExperience.HideExperience
 Microsoft.Windows.Shell.SingleViewExperience.ShowExperience
+Microsoft.Windows.Shell.SystemSettings.AdminFlow.RunTaskFlow
 Microsoft.Windows.Shell.SystemSettings.Maps.MapsBrokerServiceInitialized
 Microsoft.Windows.Shell.SystemSettings.Maps.MapsBrokerServiceSetUp
 Microsoft.Windows.Shell.SystemSettings.Maps.MapsBrokerServiceStart
@@ -1111,6 +1112,7 @@ Microsoft.Windows.Shell.SystemSettings.Maps.MapsStoreInitialized
 Microsoft.Windows.Shell.SystemSettings.Maps.TraceChinaVariantKey
 Microsoft.Windows.Shell.SystemSettings.Maps.UpdateTaskCompleted
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.Activated
+Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.SetBooleanValue
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.SettingsAppPageLaunch
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.SettingsAppStartup
 Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.SettingUsed
