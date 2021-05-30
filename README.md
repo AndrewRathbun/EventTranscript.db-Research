@@ -238,7 +238,7 @@ DiagnosticDataCategories : {1, 24}
 ...
 ```
 
-As shown above, the navigationUrlBytes field contains the value 0x647777772E6D736E2E636F6D. Decoded to ASCII this vaule is dwww.msn.com. 
+As shown above, the navigationUrlBytes field contains the value 0x647777772E6D736E2E636F6D. Decoded to ASCII this value is dwww.msn.com. 
 
 {032D297E-FF55-488E-9307-C53C43DC560B}
 
