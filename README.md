@@ -89,7 +89,7 @@ You can do filtering on events stored within this database in real-time using Di
 
 ![DiagnosticDataOverviewFilteringandNewEventsOverview](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/DiagnosticDataOverviewFilteringandNewEventsOverview.gif)
 
-You can also view Problem Reports within Diagnostic Data Viewer relating to applications suddenly not working as expected. Please note that this reports are the same found in C:\ProgramData\Microsoft\Windows\WER. 
+You can also view Problem Reports within Diagnostic Data Viewer relating to applications suddenly not working as expected. Please note that this reports are the same found in `C:\ProgramData\Microsoft\Windows\WER`. 
 
 ![DiagnosticDataViewerProblemReports](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/DiagnosticDataViewerProblemReports.jpg)
 
