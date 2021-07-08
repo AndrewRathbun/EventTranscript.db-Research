@@ -10,7 +10,7 @@ EventTranscript.db is a SQLite database that appears to record lots of diagnosti
 
 ## Where is EventTranscript.db located?
 
-C:\ProgramData\Microsoft\Diagnosis\EventTranscript\EventTranscript.db
+`C:\ProgramData\Microsoft\Diagnosis\EventTranscript\EventTranscript.db`
 
 ## What does EventTranscript.db record?
 
