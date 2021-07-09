@@ -2,7 +2,7 @@
 
 This repository serves to provide all currently known information about EventTranscript.db. 
 
-(Kroll Blog Post link here)
+[Forensically Unpacking EventTranscript.db: An Investigative Series](https://www.kroll.com/en/insights/publications/cyber/forensically-unpacking-eventtranscript) - articles at the bottom of this landing page
 
 ## What is EventTranscript.db?
 
