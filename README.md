@@ -10,7 +10,7 @@ EventTranscript.db is a SQLite database that appears to record lots of diagnosti
 
 ## Where is EventTranscript.db located?
 
-C:\ProgramData\Microsoft\Diagnosis\EventTranscript\EventTranscript.db
+`C:\ProgramData\Microsoft\Diagnosis\EventTranscript\EventTranscript.db`
 
 ## What does EventTranscript.db record?
 
@@ -89,7 +89,7 @@ You can do filtering on events stored within this database in real-time using Di
 
 ![DiagnosticDataOverviewFilteringandNewEventsOverview](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/DiagnosticDataOverviewFilteringandNewEventsOverview.gif)
 
-You can also view Problem Reports within Diagnostic Data Viewer relating to applications suddenly not working as expected. Please note that this reports are the same found in C:\ProgramData\Microsoft\Windows\WER. 
+You can also view Problem Reports within Diagnostic Data Viewer relating to applications suddenly not working as expected. Please note that this reports are the same found in `C:\ProgramData\Microsoft\Windows\WER`. 
 
 ![DiagnosticDataViewerProblemReports](https://github.com/rathbuna/EventTranscript.db-Research/blob/main/Pictures/DiagnosticDataViewerProblemReports.jpg)
 
@@ -243,9 +243,5 @@ As shown above, the navigationUrlBytes field contains the value 0x647777772E6D73
 {032D297E-FF55-488E-9307-C53C43DC560B}
 
 # TODO
-Add links to SQLECmd Map.
 
-Add section about using SQLECmd with KAPE.
-
-Add spreadsheet of 2,699 Full Event Names with Counts.
-
+Add spreadsheet of 2,500+ Full Event Names with Counts.
