@@ -1,0 +1,364 @@
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18005abbf
+uuid: b31c57ac-4a31-470f-bbee-dba1e5b246be - Flight Ids Client API 
+	iid: 79588f37-5be1-4a35-b23d-29832257cada
+Name: Flight Ids Client API 
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{b31c57ac-4a31-470f-bbee-dba1e5b246be}
+Path: %SystemRoot%\System32\FlightSettings.dll	
+
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18005498e
+uuid: 3185a766-b338-11e4-a71e-12e3f512a338 - CLSID_FlightSettingsAPIBroker
+	iid: e833feb2-c58a-45e4-8d93-08874744febb
+Name: Flight Settings API Broker
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{3185a766-b338-11e4-a71e-12e3f512a338} 
+Path: %SystemRoot%\System32\FlightSettings.dll
+AppID: {7006698d-2974-4091-a424-85dd0b909e23}
+
+Instantiation failed
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 1800879eb
+uuid: 0c9281f9-6da1-4006-8729-de6e6b61581c - CLSID_CWindowsPushNotificationPlatform
+	iid: df8e9480-ca73-448e-b8f0-da000f581428 - IID_IWpnPlatform 
+
+Instantiation:
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 180061aad
+uuid: 0000034b-0000-0000-c000-000000000046 - CLSID_GlobalOptions
+	iid: 0000015b-0000-0000-c000-000000000046 - IID_IGlobalOptions
+Name: GlobalOptions
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 180079b39
+uuid: b31c57ac-4a31-470f-bbee-dba1e5b246be - Flight Ids Client API 
+	iid: 79588f37-5be1-4a35-b23d-29832257cada
+Name: Flight Ids Client API 
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{b31c57ac-4a31-470f-bbee-dba1e5b246be}
+Path: %SystemRoot%\System32\FlightSettings.dll	
+
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18007ab50
+uuid: b91d5831-b1bd-4608-8198-d72e155020f7 - UpdateSessionOrchestrator
+	iid: 07f3afac-7c8a-4ce7-a5e0-3d24ee8a77e0
+Name: UpdateSessionOrchestrator
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{B91D5831-B1BD-4608-8198-D72E155020F7}
+AppID: {E7299E79-75E5-47BB-A03D-6D319FB7F886}
+Path: %SystemRoot%\System32\usosvc.dll
+
+Instantiation failed
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18002fc0a
+uuid: 4590f811-1d3a-11d0-891f-00aa004b2e24 - CLSID_WbemLocator
+	iid: dc12a687-737f-11cf-884d-00aa004b2e24 - IID_IWbemLocator
+Name: WEBM Locator
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{4590F811-1D3A-11D0-891F-00AA004B2E24}
+Path: %systemroot%\system32\wbem\wbemprox.dll
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 180071cae
+uuid: 00000323-0000-0000-c000-000000000046 - CLSID_StdGlobalInterfaceTable
+	iid: 00000146-0000-0000-c000-000000000046 - IID_IGlobalInterfaceTable
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18004ae06
+uuid: b31c57ac-4a31-470f-bbee-dba1e5b246be - Flight Ids Client API 
+	iid: 79588f37-5be1-4a35-b23d-29832257cada
+Name: Flight Ids Client API 
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{b31c57ac-4a31-470f-bbee-dba1e5b246be}
+Path: %SystemRoot%\System32\FlightSettings.dll	
+
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 180049eef
+uuid: 0000034b-0000-0000-c000-000000000046 - CLSID_GlobalOptions
+	iid: 0000015b-0000-0000-c000-000000000046 - IID_IGlobalOptions
+Name: GlobalOptions
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18004af26
+uuid: b31c57ac-4a31-470f-bbee-dba1e5b246be - Flight Ids Client API 
+	iid: 79588f37-5be1-4a35-b23d-29832257cada
+Name: Flight Ids Client API 
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{b31c57ac-4a31-470f-bbee-dba1e5b246be}
+Path: %SystemRoot%\System32\FlightSettings.dll	
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 180079fc6
+uuid: b31c57ac-4a31-470f-bbee-dba1e5b246be - Flight Ids Client API 
+	iid: 79588f37-5be1-4a35-b23d-29832257cada
+Name: Flight Ids Client API 
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{b31c57ac-4a31-470f-bbee-dba1e5b246be}
+Path: %SystemRoot%\System32\FlightSettings.dll	
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18001c3b8
+uuid: b31c57ac-4a31-470f-bbee-dba1e5b246be - Flight Ids Client API 
+	iid: 79588f37-5be1-4a35-b23d-29832257cada
+Name: Flight Ids Client API 
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{b31c57ac-4a31-470f-bbee-dba1e5b246be}
+Path: %SystemRoot%\System32\FlightSettings.dll	
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18005f4c1
+uuid: 0000034b-0000-0000-c000-000000000046 - CLSID_GlobalOptions
+	iid: 0000015b-0000-0000-c000-000000000046 - IID_IGlobalOptions
+Name: GlobalOptions
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18008062d
+uuid: b91d5831-b1bd-4608-8198-d72e155020f7 - UpdateSessionOrchestrator
+	iid: 07f3afac-7c8a-4ce7-a5e0-3d24ee8a77e0
+Name: UpdateSessionOrchestrator
+AppID: {E7299E79-75E5-47BB-A03D-6D319FB7F886}
+Path: %SystemRoot%\System32\usosvc.dll
+
+Instantiation failed
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18000565a
+uuid: 1fd1b5a7-5c96-4711-a7c3-fff6d21f93d9 - Windows Push Notification System Platform
+	iid: df8e9480-ca73-448e-b8f0-da000f581428 - IID_IWpnPlatform
+Name: Windows Push Notification System Platform
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{1FD1B5A7-5C96-4711-A7C3-FFF6D21F93D9}
+AppID: {34E76A18-223B-4E23-BEAD-F59358CC0A90}
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 1800046cd
+uuid: 0000034e-0000-0000-c000-000000000046 - CLSID_ContextSwitcher
+	iid: 000001da-0000-0000-c000-000000000046 - IID_IContextCallback
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 180030741
+uuid: 66d0db14-5638-475f-a386-629522d8c461 - ConfigManager2
+	iid: 56a4bdd5-835a-4dd5-95b5-44805ca37db0
+Name: ConfigManager2
+Path: %systemroot%\system32\configmanager2.dll
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{66D0DB14-5638-475f-A386-629522D8C461}
+
+   TypeName: System.__ComObject
+
+Name                      MemberType Definition
+----                      ---------- ----------
+CreateObjRef              Method     System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Equals                    Method     bool Equals(System.Object obj)
+GetHashCode               Method     int GetHashCode()
+GetLifetimeService        Method     System.Object GetLifetimeService()
+GetType                   Method     type GetType()
+InitializeLifetimeService Method     System.Object InitializeLifetimeService()
+ToString                  Method     string ToString()
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18002f816
+uuid: 3185a766-b338-11e4-a71e-12e3f512a338 - CLSID_FlightSettingsAPIBroker
+	iid: e833feb2-c58a-45e4-8d93-08874744febb
+Name: Flight Settings API Broker
+Key: Computer\HKEY_CLASSES_ROOT\CLSID\{3185a766-b338-11e4-a71e-12e3f512a338} 
+Path: %SystemRoot%\System32\FlightSettings.dll
+AppID: {7006698d-2974-4091-a424-85dd0b909e23}
+
+Instantiation failed
+
+-------------------------------------------------------------------------------------------------------
+
+COM object creation at 18007a7d5
+uuid: b91d5831-b1bd-4608-8198-d72e155020f7 - UpdateSessionOrchestrator
+	iid: 07f3afac-7c8a-4ce7-a5e0-3d24ee8a77e0
+Name: UpdateSessionOrchestrator
+AppID: {E7299E79-75E5-47BB-A03D-6D319FB7F886}
+Path: %SystemRoot%\System32\usosvc.dll
+
+Instantiation failed
+
+-------------------------------------------------------------------------------------------------------
