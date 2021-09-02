@@ -242,6 +242,10 @@ As shown above, the navigationUrlBytes field contains the value 0x647777772E6D73
 
 {032D297E-FF55-488E-9307-C53C43DC560B}
 
+# DFIR Community-created Parsers
+
+- [EventTranscriptParser](https://github.com/stuxnet999/EventTranscriptParser) by [Abhiram Kumar](https://github.com/stuxnet999)
+
 # TODO
 
 Add spreadsheet of 2,500+ Full Event Names with Counts.
