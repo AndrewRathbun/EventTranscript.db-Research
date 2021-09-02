@@ -4,6 +4,10 @@ This repository serves to provide all currently known information about EventTra
 
 [Forensically Unpacking EventTranscript.db: An Investigative Series](https://www.kroll.com/en/insights/publications/cyber/forensically-unpacking-eventtranscript) - articles at the bottom of this landing page
 
+# DFIR Community-created Parsers
+
+- [EventTranscriptParser](https://github.com/stuxnet999/EventTranscriptParser) by [Abhiram Kumar](https://github.com/stuxnet999)
+
 ## What is EventTranscript.db?
 
 EventTranscript.db is a SQLite database that appears to record lots of diagnostic-related information about events that occur on the Windows operating system in real-time. This database is not enabled by default and, if enabled, can be enormous in size and potentially serve as a treasure trove of data. 
@@ -241,10 +245,6 @@ DiagnosticDataCategories : {1, 24}
 As shown above, the navigationUrlBytes field contains the value 0x647777772E6D736E2E636F6D. Decoded to ASCII this value is dwww.msn.com. 
 
 {032D297E-FF55-488E-9307-C53C43DC560B}
-
-# DFIR Community-created Parsers
-
-- [EventTranscriptParser](https://github.com/stuxnet999/EventTranscriptParser) by [Abhiram Kumar](https://github.com/stuxnet999)
 
 # TODO
 
